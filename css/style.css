@@ -1,4 +1,8 @@
 :root {
+    --primary: #003E19; /* Cor Primária */
+    --secondary: #000000; /* Cor Secundária */
+    --tertiary: #7BC5AE; /* Cor Terciária */
+    --quaternary: #D1EDE1; /* Cor Quaternária */
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -12,8 +16,6 @@
     --white: #fff;
     --gray: #767575;
     --gray-dark: #434242;
-    --primary: #6f42c1;
-    --secondary: #4f4f4f;
     --success: #28a745;
     --info: #17a2b8;
     --warning: #ffc107;
@@ -36,6 +38,7 @@
     --content-max-width: 860px;
 }
 
+
 *,
 *::before,
 *::after {
@@ -50,7 +53,7 @@ body {
     overflow-x: hidden
 }
 a{
-    color: var(--pink);
+    color: var(--primary);
 }
 h1,
 h2,
@@ -144,8 +147,9 @@ h6 {
     font-weight: bold
 }
 
+/* Quando estiver na pagina, o nome dela no header ficara preto */
 .header .nav-item.active .nav-link {
-    color: rgba(0, 0, 0, 0.5)
+    color: var(--secondary)
 }
 
 .header .nav-item.active .nav-link:hover {
@@ -156,9 +160,10 @@ h6 {
     color: rgba(255, 255, 255, 0.8)
 }
 
+/* Navegar entre as paginas (passar mouse por cima) */
 .header .nav-item .nav-link:hover {
     text-decoration: underline;
-    color: rgba(0, 0, 0, 0.6)
+    color: rgba(0, 0, 0, 0.701)
 }
 .logo{
     width:78px;
@@ -211,7 +216,7 @@ h6 {
 }
 .gradient{
     background: rgb(43,43,43);
-    background: linear-gradient(151deg, var(--orange) 0%, var(--pink) 35%,var(--primary) 100%) !important;
+    background: linear-gradient(151deg, var(--primary) 0%, var(--secondary) 55%,var(--tertiary) 120%) !important;
 }
 .content .post .title {
     font-size: 1.275rem
@@ -425,8 +430,6 @@ h6 {
 	text-align: center;
 }
 
-
-/* Comment Item ----------------------------- */
 
 /* COMMENT HEADER */
 
@@ -730,4 +733,15 @@ div.comment:first-of-type {
 .comment-reply-title small a:focus,
 .comment-reply-title small a:hover {
 	text-decoration: underline;
+}
+
+/* Centralizar as logos -> Tela Parceiros */
+.center-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-image img {
+    margin: 0 auto;
 }
