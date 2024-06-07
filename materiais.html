@@ -65,115 +65,27 @@
         <article class="content px-3 py-5 p-md-5">
             <div class="container">
                 <hr class="content-body">
-                    <h3 class="mt-5 mb-3 text-center-custom">EXEMPLO DE PROJETOS</h3>
-                    <p>A seguir, apresentamos uma série de vídeos que ilustram os projetos desenvolvidos em colaboração com nossos distintos <a href="parceiros.html" target="_blank"><u>parceiros</u></a>.
-                        Esses vídeos demonstram a nossa capacidade de inovação e excelência em diversas áreas, evidenciando o comprometimento 
-                        e a qualidade dos resultados alcançados através dessas valiosas parcerias. <br> Cada projeto representa um esforço conjunto e a 
-                        aplicação de conhecimentos avançados para atender às necessidades específicas de nossos clientes e parceiros, refletindo o nosso compromisso com a 
-                        excelência e a inovação contínua.</p>
+                <h3 class="mt-5 mb-3 text-center-custom">EXEMPLO DE PROJETOS</h3>
+                <p>A seguir, apresentamos uma série de vídeos que ilustram os projetos desenvolvidos em colaboração com
+                    nossos distintos <a href="parceiros.html" target="_blank"><u>parceiros</u></a>.
+                    Esses vídeos demonstram a nossa capacidade de inovação e excelência em diversas áreas, evidenciando
+                    o comprometimento
+                    e a qualidade dos resultados alcançados através dessas valiosas parcerias. <br> Cada projeto
+                    representa um esforço conjunto e a
+                    aplicação de conhecimentos avançados para atender às necessidades específicas de nossos clientes e
+                    parceiros, refletindo o nosso compromisso com a
+                    excelência e a inovação contínua.</p>
 
-                        <!-- Vídeo 1 -->
-						<div class="video-info">
-							<h4>Nome do Projeto 1</h4>
-							<p>Descrição do Projeto 1.</p>
-						</div>
-                        <div class="video-container">
-                            <video class="d-block w-100" controls>
-                                <source src="videos/Ambientes.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-                        </div>
-						<br>
-
-                        <!-- Vídeo 2 -->
-						<div class="video-info">
-							<h4>Nome do Projeto 2</h4>
-							<p>Descrição do Projeto 2.</p>
-						</div>
-                        <div class="video-container">
-                            <video class="d-block w-100" controls>
-                                <source src="videos/Demonstrativo.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-						</div>
-						<br>
-
-						<!-- Vídeo 3 -->
-						<div class="video-info">
-							<h4>Nome do Projeto 3</h4>
-							<p>Descrição do Projeto 3.</p>
-						</div>
-                        <div class="video-container">
-                            <video class="d-block w-100" controls>
-                                <source src="videos/Ambientes.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-                        </div>
-						<br>
-
-                        <!-- Vídeo 4 -->
-						<div class="video-info">
-							<h4>Nome do Projeto 4</h4>
-							<p>Descrição do Projeto 4.</p>
-						</div>
-                        <div class="video-container">
-                            <video class="d-block w-100" controls>
-                                <source src="videos/Demonstrativo.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-						</div>
-						<br>
-
-						<!-- Vídeo 5 -->
-						<div class="video-info">
-							<h4>Nome do Projeto 5</h4>
-							<p>Descrição do Projeto 5.</p>
-						</div>
-                        <div class="video-container">
-                            <video class="d-block w-100" controls>
-                                <source src="videos/Ambientes.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-                        </div>
-						<br>
-
-                        <!-- Vídeo 6 -->
-						<div class="video-info">
-							<h4>Nome do Projeto 6</h4>
-							<p>Descrição do Projeto 6.</p>
-						</div>
-                        <div class="video-container">
-                            <video class="d-block w-100" controls>
-                                <source src="videos/Demonstrativo.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-						</div>
-						<br>
-
-						<!-- Vídeo 7 -->
-						<div class="video-info">
-							<h4>Nome do Projeto 7</h4>
-							<p>Descrição do Projeto 7.</p>
-						</div>
-                        <div class="video-container">
-                            <video class="d-block w-100" controls>
-                                <source src="videos/Ambientes.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-                        </div>
-						<br>
-
-                        <!-- Vídeo 8 -->
-						<div class="video-info">
-							<h4>Nome do Projeto 8</h4>
-							<p>Descrição do Projeto 8.</p>
-						</div>
-                        <div class="video-container">
-                            <video class="d-block w-100" controls>
-                                <source src="videos/Demonstrativo.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-						</div>
+                <div id="video-container">
+                    <h2 id="video-title"></h2>
+                    <p id="video-description"></p>
+                    <video id="video" controls>
+                        <source src="" type="video/mp4">
+                    </video>
+                    <br>
+                    <button id="prevBtn">Voltar</button>
+                    <button id="nextBtn">Próximo</button>
+                </div>
                 </hr>
             </div>
         </article>
@@ -195,17 +107,65 @@
 
     </div>
 
+
     <!-- Bootstrap Javascript -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    <script src="js/main.js"></script>
+
+    <!-- 
+        - SCRIPT PARA QUANDO CLICAR NO ANT/PROX APRESENTAR OS VIDEOS COM SUAS DESCRIÇÕES 
+        - DEPOIS TENTAR ENTENDER O MOTIVO DE NAO CONSEGUIR COLOCAR NO MAIN.JS E PUXAR PARA CÁ SENDO QUE
+        O ARQUIVO JS/MAIN.JS ESTA AQUI..
+    -->
+    <script>
+        const videos = [
+            { title: "PORTAS RÁPIDAS PARA DIVERSAS APLICAÇÕES", description: "Conjunto de portas de alta velocidade projetadas para atender a uma variedade de necessidades em diferentes contextos de uso. Essas portas são caracterizadas pela sua capacidade de abertura e fechamento rápido, o que as torna ideais para ambientes onde a eficiência operacional e a segurança são prioritárias. Elas podem ser utilizadas em diversas aplicações, como em ambientes industriais, comerciais e residenciais, proporcionando um acesso rápido e seguro em locais onde a velocidade é essencial.", videoUrl: "videos/PortasRapidas.mp4" },
+            { title: "FUNCIONAMENTO TRAVA RODAS AUTOMÁTICO", description: "A trava de rodas automática é um dispositivo de segurança projetado para impedir o movimento não intencional de um veículo quando está estacionado. Com um funcionamento simples e eficaz, essa tecnologia é acionada automaticamente assim que o veículo é desligado e as rodas são viradas para uma posição específica, garantindo que o veículo permaneça estável, mesmo em terrenos inclinados.", videoUrl: "videos/AnimacaoTravaRodas.mp4" },
+            { title: "ANIMAÇÃO DA OPERAÇÃO DO TRAVA RODAS", description: "A animação da operação do trava rodas é um recurso visual que demonstra de forma dinâmica e detalhada como o dispositivo funciona. Utilizando gráficos animados e explicações passo a passo, essa animação mostra como a trava é acionada automaticamente ao desligar o veículo, proporcionando uma visualização clara e educativa do processo.", videoUrl: "videos/Animacao.mp4" },
+            { title: "GALPÕES LONAS EM DIVERSAS MEDIDAS E APLICAÇÕES", description: "Os galpões lonas são estruturas versáteis e resistentes, ideais para diversas aplicações como armazenagem, eventos temporários, cobertura de áreas industriais, entre outros. Disponíveis em uma variedade de medidas, esses galpões oferecem soluções flexíveis e econômicas para necessidades de cobertura temporária ou permanente.", videoUrl: "videos/GalpaoLona.mp4" },
+            { title: "PORTAS SECCIONAIS PARA DIVERSAS APLICAÇÕES", description: "As portas seccionais são uma escolha popular para diversas aplicações industriais e comerciais devido à sua durabilidade e eficiência. Composta por painéis seccionados que se elevam verticalmente, essa porta proporciona uma abertura segura e eficaz, adequada para diferentes tamanhos de abertura e ambientes.", videoUrl: "videos/PortasSeccionais.mp4" },
+            { title: "PORTA RÁPIDA PARA SALA LIMPA", description: "As portas rápidas são projetadas para ambientes que requerem controle rigoroso de contaminação, como salas limpas em indústrias farmacêuticas, alimentícias e eletrônicas. Com abertura e fechamento rápido, essas portas minimizam a entrada de partículas externas, mantendo a integridade do ambiente estéril.", videoUrl: "videos/PortaRapidaSalaLimpa.mp4" },
+            { title: "NIVELADORA DE DOCA EMBUTIDA COM FLAP", description: "A niveladora de doca embutida com flap é um equipamento utilizado em docas de carga e descarga para facilitar o acesso de veículos de transporte. O flap articulado se ajusta automaticamente à altura do veículo, garantindo um nivelamento seguro e eficiente entre a doca e o veículo, facilitando a movimentação de cargas.", videoUrl: "videos/NiveladoraDocaFlap.mp4" },
+            { title: "NIVELADORA DE DOCA ELETRO HIDRÁULICA FRONTAL", description: "A niveladora de doca eletro hidráulica frontal é um equipamento robusto e eficiente utilizado em docas de carga e descarga para facilitar o acesso de veículos de transporte. Com acionamento eletro hidráulico, essa niveladora proporciona um nivelamento preciso e seguro entre a doca e o veículo, otimizando o processo de carga e descarga.", videoUrl: "videos/NiveladoraDoca.mp4" },
+        ];
+
+        let currentVideoIndex = 0;
+
+        const videoTitleElement = document.getElementById("video-title");
+        const videoDescriptionElement = document.getElementById("video-description");
+        const videoElement = document.getElementById("video");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        function showVideo(index) {
+            const video = videos[index];
+            videoTitleElement.textContent = video.title;
+            videoDescriptionElement.textContent = video.description;
+            videoElement.src = video.videoUrl;
+        }
+
+        prevBtn.addEventListener("click", () => {
+            currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
+            showVideo(currentVideoIndex);
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+            showVideo(currentVideoIndex);
+        });
+
+        // Mostrar o primeiro vídeo ao carregar a página
+        showVideo(currentVideoIndex);
+
     </script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-		</script>
-	<script src="js/main.js"></script>
 </body>
 
 </html>
