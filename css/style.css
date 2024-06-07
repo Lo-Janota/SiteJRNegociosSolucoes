@@ -1,35 +1,6 @@
 :root {
     --primary: #003E19; /* Cor Primária */
     --secondary: #000000; /* Cor Secundária */
-    --tertiary: #7BC5AE; /* Cor Terciária */
-    --quaternary: #D1EDE1; /* Cor Quaternária */
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #ee3577;
-    --red: #dc3545;
-    --orange: #f68e62;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #767575;
-    --gray-dark: #434242;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #c2c2c2;
-    --lightgray: #eeeeee;
-    --dark: #434242;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     /* Font Sizes */
     --font-normal: 1em;
     --font-small: 0.8125rem;
@@ -57,12 +28,20 @@ a{
 }
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
-    color: var(--gray-dark);
-    font-weight: bold
+    color: var(--primary);
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .btn {
@@ -110,6 +89,7 @@ h6 {
     color:var(--white);
     font-size:1.2em;
     display:block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .header .btn-primary {
@@ -144,16 +124,18 @@ h6 {
 }
 
 .header .nav-item {
-    font-weight: bold
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Quando estiver na pagina, o nome dela no header ficara preto */
 .header .nav-item.active .nav-link {
-    color: var(--secondary)
+    color: var(--secondary);
+    
 }
 
 .header .nav-item.active .nav-link:hover {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .header .nav-item .nav-link {
@@ -167,21 +149,6 @@ h6 {
 }
 .logo{
     width:78px;
-}
-.social-list a {
-    width: 32px;
-    height: 32px;
-    padding-top: 5px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    transition: all 0.2s ease-in-out;
-    background-color: #fff
-}
-
-.social-list a:hover {
-    color: var(--secondary);
-    background-color: rgba(255, 255, 255, 0.8)
 }
 
 .main-wrapper {
@@ -218,88 +185,29 @@ h6 {
     background: rgb(43,43,43);
     background: linear-gradient(151deg, var(--primary) 0%, var(--primary) 35%,var(--secondary) 100%) !important;
 }
-.content .post .title {
+.content .parc .title {
     font-size: 1.275rem
 }
 
-.content .post .title a {
+.content .parc .title a {
     color: var(--gray-dark)
 }
 
-.content .post .title a:hover {
+.content .parc .title a:hover {
     color: var(--gray-dark)
 }
 
-.content .post .post-thumb {
+.content .parc .partener {
     max-width: 160px;
     border-radius: 2px
 }
 
-.content .post .intro {
+.content .parc .intro {
     font-size: 0.875rem
 }
 
-.content .post .more-link {
+.content .parc .more-link {
     font-size: var(--font-small);
-}
-
-.meta {
-    color: #8f8f8f;
-    font-size: var(--font-small);
-}
-
-.meta span {
-    display: inline-block;
-    margin-right:.25em;
-}
-
-.meta span a {
-    color: #8f8f8f
-}
-.meta span.tag {
-    background-color: var(--lightgray);
-    padding:0 .5em;
-    border-radius:5px;
-}
-.meta span a:hover {
-    color: var(--secondary)
-}
-
-
-
-.meta span:last-child:after {
-    display: none
-}
-
-.blog-nav .nav-link {
-    background: var(--primary);
-    color: #fff;
-    font-size: 1rem;
-    padding: 1rem;
-    font-weight: bold;
-    position: relative
-}
-
-.blog-nav .nav-link:hover {
-    background: var(--secondary);
-}
-
-.blog-nav .nav-link-prev {
-    border-right: 1px solid var(--secondary);
-}
-
-.blog-nav .arrow-prev {
-    position: absolute;
-    left: 1rem;
-    top: 1.25rem;
-    color: #fff
-}
-
-.blog-nav .arrow-next {
-    position: absolute;
-    right: 1rem;
-    top: 1.25rem;
-    color: #fff
 }
 
 .content .title {
@@ -309,8 +217,8 @@ h6 {
 
 .content .content-body p,
 .content .content-body li {
-    font-size: 1.125rem;
-    line-height: 1.6
+    font-size: 1.25rem;
+    line-height: 1.75;
 }
 
 .content .content-body h1 {
@@ -322,19 +230,7 @@ h6 {
 }
 
 .content .content-body h3 {
-    font-size: 1.75rem
-}
-
-.content .content-body h4 {
-    font-size: 1.5rem
-}
-
-.content .content-body h5 {
-    font-size: 1.25rem
-}
-
-.content .content-body h6 {
-    font-size: 1.125rem
+    font-size: 35px
 }
 
 .content .image-caption {
@@ -351,16 +247,6 @@ h6 {
     color: var(--secondary)
 }
 
-.content .blockquote {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    border-left: 2px solid var(--gray-dark);
-    font-size: 1.5rem
-}
-
-.content .blockquote p {
-    font-size: 1.5rem
-}
-
 @media (prefers-reduced-motion: reduce) {
     .social-list a {
         transition: none
@@ -371,8 +257,6 @@ h6 {
 }
 
 @media (min-width: 768px) {
-   
-    
 }
 
 @media (max-width: 991.98px) {
@@ -393,6 +277,7 @@ h6 {
         color:var(--white);
         font-size:1.5em;
         display:block;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     .header .btn-primary {
@@ -422,3 +307,32 @@ h6 {
 .center-image img {
     margin: 0 auto;
 }
+
+/* Centraliza texto (Exemplo de Projetos) na parte de Demonstração */
+.text-center-custom {
+    text-align: center;
+    font: normal;
+    font-size: 45px;
+}
+
+
+.card-text p, li{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+.card-title {
+    color: #007bff;
+    /* Cor azul Bootstrap */
+}
+
+.video-info {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.meta {
+    color: #8f8f8f;
+    font-size: var(--font-small);
+}
+
