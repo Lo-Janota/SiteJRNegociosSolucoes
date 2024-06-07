@@ -12,18 +12,9 @@ Funcionalidades
 Tecnologias Utilizadas
 
     HTML5, CSS3 e JavaScript para o desenvolvimento do front-end.
-    Possível uso de frameworks como Bootstrap para facilitar o design responsivo.
+    Uso de frameworks como Bootstrap para facilitar o design responsivo.
 
 Instalação e Uso
 
     Clone o repositório para o seu computador.
     Abra o arquivo index.html em um navegador web para visualizar o site localmente.
-
-Contribuição
-
-    Para contribuir com o projeto, siga as boas práticas de desenvolvimento e abra um Pull Request com suas alterações.
-    Caso encontre algum problema ou queira sugerir melhorias, abra uma issue no GitHub.
-
-Licença
-
-Este projeto está licenciado sob a MIT License.
